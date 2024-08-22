@@ -3,10 +3,7 @@
   "extends": [
     "config:recommended"
   ],
-  "pin": {
-    "from": "quay.io/enterprise-contract/ec-task-bundle",
-    "to": "latest"
-  },
+  "pin": "quay.io/enterprise-contract/ec-task-bundle",
   "onboarding": {
     "fileMatch": [
       "kustomization.yaml"
