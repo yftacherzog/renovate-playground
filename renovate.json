@@ -9,12 +9,5 @@
     "includePaths": [
       "tasks/**"
     ]
-  },
-  "packageRules": [
-    {
-      "matchPackageNames": [
-        "quay.io/redhat-appstudio/tools"
-      ]
-    }
-  ]
+  }
 }
