@@ -1,12 +1,20 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended"
+    "config:base"
   ],
-  "pin": "quay.io/enterprise-contract/ec-task-bundle",
-  "onboarding": {
-    "fileMatch": [
-      "kustomization.yaml"
+  "dependencyDashboard": false,
+  "tekton": {
+    "fileMatch": ["\\.yaml$", "\\.yml$"],
+    "includePaths": [
+      "tasks/**"
     ]
-  }
+  },
+  "packageRules": [
+    {
+      "matchPackageNames": [
+        "quay.io/redhat-appstudio/tools"
+      ]
+    }
+  ]
 }
