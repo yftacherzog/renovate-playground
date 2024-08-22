@@ -15,9 +15,9 @@
       "customType": "regex",
       "fileMatch": ["konflux-ci/enterprise-contract/core/kustomization.yaml"],
       "matchStrings": [
-        "- verify_ec_task_bundle=(?<depName>quay\\.io/enterprise-contract/ec-task-bundle[^:]*):(?<currentValue>[^@]*)@(?<currentDigest>sha256:[a-f0-9]{64})"
+        "- verify_ec_task_bundle=(?<depName>quay\\.io/enterprise-contract/ec-task-bundle)@(?<currentDigest>sha256:[a-f0-9]{64})"
       ],
-      "autoReplaceStringTemplate": "value: {{depName}}{{#if newValue}}:{{newValue}}{{/if}}{{#if newDigest}}@{{newDigest}}{{/if}}",
+      "autoReplaceStringTemplate": "- verify_ec_task_bundle={{depName}}@{{newDigest}}",
       "datasourceTemplate": "docker"
     }
   ]
