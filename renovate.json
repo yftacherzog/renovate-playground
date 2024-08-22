@@ -19,7 +19,7 @@
       ],
       "autoReplaceStringTemplate": "- verify_ec_task_bundle={{depName}}@{{newDigest}}",
       "datasourceTemplate": "docker",
-      "currentValueTemplate": "latest"
+      "currentValueTemplate": "snapshot"
     }
   ]
 }
