@@ -3,4 +3,15 @@
   "extends": [
     "config:recommended"
   ]
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": ["konflux-ci/enterprise-contract/core/kustomization.yaml"],
+      "matchStrings": [
+        "- verify_ec_task_bundle=(verify_ec_task_bundle=quay\\.io/enterprise-contract/ec-task-bundle[^:]*):(?<currentValue>[^@]*)@(?<currentDigest>sha256:[a-f0-9]{64})"
+      ],
+      "autoReplaceStringTemplate": "value: {{depName}}{{#if newValue}}:{{newValue}}{{/if}}{{#if newDigest}}@{{newDigest}}{{/if}}",
+      "datasourceTemplate": "docker"
+    }
+  ]
 }
