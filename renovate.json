@@ -26,7 +26,7 @@
       "matchStringsStrategy": "combination",
       "fileMatch": ["konflux-ci/enterprise-contract/core/kustomization.yaml"],
       "matchStrings": [
-        "- verify_ec_task_git_url=(?<packageName>https:\/\/github\\.com\/enterprise-contract\/ec-cli)\.git",
+        "- verify_ec_task_git_url=(?<packageName>https:\/\/github\\.com\/enterprise-contract\/ec-cli)\\.git",
         "- verify_ec_task_git_revision=(?<currentDigest>[a-f0-9]{40})"
       ],
       "datasourceTemplate": "git-refs",
