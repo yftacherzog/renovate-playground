@@ -31,6 +31,6 @@
       ],
       "datasourceTemplate": "git-refs",
       "currentValueTemplate": "main"
-    },
+    }
   ]
 }
