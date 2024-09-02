@@ -148,7 +148,7 @@ spec:
           readOnlyRootFilesystem: true
           runAsNonRoot: true
           runAsUser: 1001
-      - image: quay.io/konflux-ci/workspace-manager@e10bfd37fd7f057836641a1f6fa2ffcf85368084
+      - image: quay.io/konflux-ci/workspace-manager@sha256:6b7bfcf197cbff2ae9b1d84abd73636ce5733921524fb550438d8a8143a536b5
         name: workspace-manager
         ports:
           - containerPort: 5000
