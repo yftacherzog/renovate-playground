@@ -10,13 +10,6 @@
       "tasks/**"
     ]
   },
-  "packageRules": [
-    {
-      "matchPackageNames": ["quay.io/konflux-ci/workspace-manager"],
-      "matchDatasources": ["docker"],
-      "versioning": "loose"
-    }
-  ],
   "customManagers": [
     {
       "customType": "regex",
